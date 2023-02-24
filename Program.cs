@@ -89,9 +89,10 @@ namespace Test
                 }
 
                 Thread mainThread = Thread.CurrentThread;
+                mainThread.Name = "MainThread";
+
                 Thread thread1 = new(() => CountUp("hi from 1"));
                 Thread thread2 = new(() => CountDown("hi from 2"));
-                thread1.Name = "abc";
 
                 thread1.Start();
                 //thread1.Join();
