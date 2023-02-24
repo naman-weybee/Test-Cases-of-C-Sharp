@@ -132,7 +132,7 @@ namespace Test
                 Console.WriteLine(countOfNum);
 
                 //Reverse the String
-                Console.WriteLine(ReverseString("ReverseString"));
+                Console.WriteLine(ReverseString("Make String Reverse"));
 
                 //Reverse the Order of Word in String
                 Console.WriteLine(ReverseWordOrder("hello from words"));
@@ -200,7 +200,7 @@ namespace Test
             public static bool CheckForPalindromeString(string str)
             {
                 string xyz = ReverseString(str);
-                if (str == xyz)
+                if (str.ToLower() == xyz.ToLower())
                     return true;
                 else
                     return false;
